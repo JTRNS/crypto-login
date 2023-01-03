@@ -1,0 +1,52 @@
+.login-form {
+  --form-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  width: 100%;
+  max-width: 56ch;
+}
+
+.login-form legend {
+  font-size: var(--font-xl, 1.728rem);
+  font-weight: bold;
+  margin: 0 0 0.77rem 1rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.login-form fieldset {
+  padding: 0;
+  border: none;
+}
+
+.login-form fieldset>div {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 8px;
+  background-color: var(--color-bg);
+  box-shadow: var(--form-shadow);
+}
+
+.login-form button[type="submit"] {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+.login-form a:last-child {
+  display: block;
+  text-align: center;
+  margin: 2rem auto 1rem;
+  color: inherit;
+  width: fit-content;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .login-form fieldset>div {
+    box-shadow: none;
+    border: thin solid rgba(182, 182, 182, 0.06);
+  }
+
+  .login-form legend {
+    font-weight: normal;
+    text-shadow: none;
+  }
+}

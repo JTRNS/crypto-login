@@ -1,3 +1,5 @@
-export default function App() {
-  return <h1>Login Form</h1>;
+import LoginForm from "./components/LoginForm";
+
+function App() {
+  return <LoginForm title="sign-in" />;
 }
